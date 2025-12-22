@@ -28,7 +28,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/%E6%9D%BF%E5%AD%90%E6%8E%A5%E7%BA%BF.jpg">
 <meta property="article:published_time" content="2025-12-20T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-12-21T13:20:40.415Z">
+<meta property="article:modified_time" content="2025-12-22T11:39:48.643Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/images/%E6%9D%BF%E5%AD%90%E6%8E%A5%E7%BA%BF.jpg">
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k words
+          1.7k words
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          12 mins
+          14 mins
         
       </span>
     
@@ -375,7 +375,34 @@
 <p>接着：</p>
 <p>setting – keyboard – input sources – + – 三个点 – other – chinese(intelligent pinyin) – add</p>
 <p>如果没看到intelligent pinyin就先安装chinese，然后重启一下板子。我就是重启以后就出现了，从<code>zh</code> 变成 <code>中</code></p>
-<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h2 id="和windows互传"><a href="#和windows互传" class="headerlink" title="和windows互传"></a>和windows互传</h2>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs linux"># 1. 安装git<br>sudo apt update<br>sudo apt install git -y<br><br># 2. 检查装好没有，应该出现git version<br>git --version<br><br># 3. 配置身份<br>git config --global user.name &quot;nnin33&quot;<br>git config --global user.email &quot;titintyn886@gmail.com&quot;<br><br># 4. 给git挂上加速器<br>git config --global http.proxy http://127.0.0.1:7897<br>git config --global https.proxy http://127.0.0.1:7897<br><br></code></pre></td></tr></table></figure>
+
+
+
+<h4 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h4><p>如果想把代码push到github上去，来配置ssh：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs linux">ssh-keygen -t ed25519 -C &quot;titintyn886@gmail.com&quot;<br></code></pre></td></tr></table></figure>
+
+<p>遇到提示时一路按回车  不用改文件名（默认在 <code>/home/username/.ssh/id_ed25519</code>）也不用设密码Passphrase，直接回车为空，方便以后 push 不用输密。</p>
+<p>获取公钥</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs linux">cat ~/.ssh/id_ed25519.pub<br></code></pre></td></tr></table></figure>
+
+<p>然后复制到github，在github – setting – ssh and gpg keys – new ssh key – add ssh key</p>
+<p>配置ssh走代理，普通的git config proxy只对https协议有效，ssh一般是端口22不走那个代理，我们来走之前clash配置的代理：编辑器我用的是nano不是vim了：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs linux">nano ~/.ssh/config<br></code></pre></td></tr></table></figure>
+
+<p>然后复制这段话进去：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs linux">Host github.com<br>    User git<br>    Hostname github.com<br>    ProxyCommand nc -X 5 -x 127.0.0.1:7897 %h %p<br></code></pre></td></tr></table></figure>
+
+<p><code>nc</code> 是 Ubuntu 自带的网络工具，<code>-X 5</code> 表示 SOCKS5 协议，<code>7897</code> 是你的端口。</p>
+<p><code>Ctrl + O</code>，然后 <strong>回车</strong> 保存，然后按 <code>Ctrl + X</code> 退出。</p>
+<p>检查配置成功没：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs linux">ssh -T git@github.com<br></code></pre></td></tr></table></figure>
+
+<p> 遇到权限输入yes，然后出现<code>Hi [你的用户名]! You&#39;ve successfully authenticated...</code>就是成功了。</p>
+<h4 id="push工作流"><a href="#push工作流" class="headerlink" title="push工作流"></a>push工作流</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs linux"># 1. 进入项目文件夹<br>cd ~/projectpath<br><br># 2. 初始化并关联<br>git init<br>git add .<br>git commit -m &quot;First commit from Jetson&quot;<br>git branch -M main<br><br>git remote add origin git@github.com:用户名/仓库名.git<br><br># 3. PUSH!!<br>git push -u origin main<br></code></pre></td></tr></table></figure>
+
+<p>🚀🚀🚀</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><h2 id="和windows互传"><a href="#和windows互传" class="headerlink" title="和windows互传"></a>和windows互传</h2>
                 
               </div>
             
