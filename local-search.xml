@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>论文查找与下载</title>
+    <link href="/2025/12/25/%E8%AE%BA%E6%96%87%E6%9F%A5%E6%89%BE%E4%B8%8E%E4%B8%8B%E8%BD%BD/"/>
+    <url>/2025/12/25/%E8%AE%BA%E6%96%87%E6%9F%A5%E6%89%BE%E4%B8%8E%E4%B8%8B%E8%BD%BD/</url>
+    
+    <content type="html"><![CDATA[<hr><h4 id="找论文流程："><a href="#找论文流程：" class="headerlink" title="找论文流程："></a>找论文流程：</h4><ol><li><p>准备好中文和英文关键词以及prompt   xx；xx  外文 在结果中筛选</p></li><li><p>依次查找：</p><ol><li><p><a href="https://www.aminer.cn/">AMiner</a> 清华做的ai挖掘论文，提供学术搜索、论文检索、推荐订阅、论文专利、学者画像、文献追踪、趋势分类、溯源树等等功能</p><p>缺点：搜索出来论文还是得自己下，联培的身份也不给注册，GLM4.6要会员，看不到年份和作者信息，看不到引用次数。主要就是看看研究趋势和主要工作的。可能prompt写多一点找的准确一点。</p></li><li><p><a href="https://scholar.aisciresgo.com/">深度ai搜索</a> 搜索出来直接是表格，可以看到年份作者，如果运气好点击pdf全文就可以能直接下载，可以切换数据源，找的论文比较新。同时可以ai总结研究目的、研究方法、测量指标、研究结果。还有ai学术总结的。还提供整个项目的源码😍😍</p><p>缺点：运气不好scihub没有资源，得自己找，因为他给你找的都还是比较新的。用功能还是得会员。看我什么时候有空自己调api写一个ui来集成一下这些功能，省的老是要会员。至于api用的多不多，都找所里面报销，爽！</p></li><li><p>玻尔</p></li><li><p><a href="https://www.webofscience.com/wos/author/author-search">sci</a> Web of science包括三大引文数据库科学类sci 社科类ssc 艺术类a&amp;hci，支持关键词，作者，标题，DOI等多种方式的检索，集成了年份，数据库，作者名字，地址，文献类型，研究领域，出版物名称，研究方向等细分方式；可以检索引用了个人著作的参考文献；与文献管理软件Endnote无缝对接，可以创建自己的私人文献库，方便论文管理。</p></li><li><p><a href="https://lib.seu.edu.cn/upload_files/article/251/53_20200922145036.pdf">scopus</a> 用来检索的，类似sci</p></li><li><p><a href="https://scholar.google.com/">谷歌学术 </a> 谷歌学术 很容易找到清朝文，还容易打不开。给你脸了</p></li><li><p><a href="https://lib.bit.edu.cn/">北理工图书馆</a> 需要id密码请私信作者：<a href="mailto:&#116;&#105;&#x74;&#x69;&#110;&#x74;&#121;&#110;&#x38;&#56;&#54;&#x40;&#103;&#109;&#x61;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#109;">titintyn886@gmail.com</a> 必须是作者认识的人才给奥，不要乱私信。</p></li><li><p><em>各个期刊官网</em></p></li></ol></li><li><p>工作流：北理工vpn登进去 <a href="https://webvpn.bit.edu.cn/">北理工vpn</a>–图书馆常用数据库–scopus（登录-用北理工的Access through your organization）–拿到doi号–转到e家 Access through your organization</p></li></ol><h4 id="谷歌学术打不开："><a href="#谷歌学术打不开：" class="headerlink" title="谷歌学术打不开："></a>谷歌学术打不开：</h4><ol><li>更换美国日本节点</li><li>电脑设置隐私里面关掉位置信息</li><li>采用镜像网站</li></ol><p><strong>镜像</strong>：</p><p>查找论文关键词，同时有下载渠道，还有期刊区级：<a href="https://ac.linglu.pro/">小熊猫-谷歌镜像</a></p><hr><h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p><strong>Sci-Hub</strong>：<a href="https://sci-hub.st/">sci-hub </a> 影子图书馆。它利用不同方法绕过出版商的付费墙，以不考虑著作权问题的方式提供数以百万计的学术论文和著作，目前已收录8800千万本文献，于2021年停止更新。查找方式：URL DOI。新论文可以在 Sci-Net <a href="https://sci-net.xyz/">sci-net</a> 上请求和上传，上传以后会对所有人免费开放。Knowledge as a human right，支持开源，抵制要钱！！</p><hr><p><strong>DOI</strong>：(Digital Object ldentifier)是数字对象标识符的缩写，用于唯一标识和永久链接到数字学术内容，如期刊文章，便于引用和跟踪。</p><ol><li><p>直接bing国际版搜索doi号</p></li><li><p><a href="https://dx.doi.org/">doi foundation</a>   查doi号对应文献的官网。</p><p>国际数字对象识别号基金会（International DOI Foundation）是1998年才成立的国际非营利组织，就是这个组织在推广和保障DOI技术的应用。如果是98年以前的论文的话可能是没有doi号的。还有国内的论文可能有doi号的不多，因为国内只有万方是跟doi签了协议允许标doi号的。</p></li><li><p><a href="https://search.crossref.org/">crossref</a> 全球最大的doi注册官网</p></li><li><p><a href="http://www.chinadoi.cn/">中文doi</a> 中文的论文有doi的可以在这里找</p></li><li></li></ol><hr><p><strong>SCOPUS</strong>：是Elsevier公司的产品。与SCI一样，都属于检索工具，而且所有SCI收录的杂志都被这个数据库收录。但是与SCI&#x2F;SSCI的简单指标（仅分区与影响因子）不同，SCOPUS使用多元指标。</p><ul><li>期刊指标（CIteScore，SJR，SNIP）</li><li>文献指标（FWCI，Plum Metrics）</li><li>研究者指标（h-index）</li></ul><p>国内更倾向于sci，但是国外（尤其东南亚）更倾向于scopus：多元指标，每月更新</p><p>使用指南：<a href="https://lib.bit.edu.cn/db/uploads/2025/09/27/Scopus%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%972025.pdf">scopus食用指南</a></p><hr>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>论文</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>自动控制原理学习</title>
     <link href="/2025/12/22/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0/"/>
     <url>/2025/12/22/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0/</url>
