@@ -296,7 +296,7 @@
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://scholar.google.com/">谷歌学术 </a> 谷歌学术 很容易找到清朝文，还容易打不开。给你脸了</p>
 </li>
-<li><p><a target="_blank" rel="noopener" href="https://lib.bit.edu.cn/">北理工图书馆</a> 需要id密码请私信作者：<a href="mailto:&#116;&#x69;&#x74;&#105;&#110;&#x74;&#x79;&#110;&#56;&#56;&#x36;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#111;&#109;">titintyn886@gmail.com</a> 必须是作者认识的人才给奥，不要乱私信。</p>
+<li><p><a target="_blank" rel="noopener" href="https://lib.bit.edu.cn/">北理工图书馆</a> 需要id密码请私信作者：<a href="mailto:&#x74;&#105;&#116;&#105;&#x6e;&#116;&#x79;&#110;&#56;&#x38;&#54;&#x40;&#103;&#109;&#97;&#x69;&#108;&#46;&#99;&#x6f;&#109;">titintyn886@gmail.com</a> 必须是作者认识的人才给奥，不要乱私信。</p>
 </li>
 <li><p><em>各个期刊官网</em></p>
 </li>
@@ -469,6 +469,12 @@
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -661,6 +667,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
