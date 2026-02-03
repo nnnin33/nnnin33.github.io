@@ -53,8 +53,23 @@
 <meta property="og:image" content="http://example.com/images/%E5%8A%A8%E6%80%81%E5%93%8D%E5%BA%94%E5%AE%9A%E4%B9%89.png">
 <meta property="og:image" content="http://example.com/images/%E8%BF%87%E9%98%BB%E5%B0%BC%E6%9F%A5%E8%A1%A8%E6%B3%95.png">
 <meta property="og:image" content="http://example.com/images/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E4%B8%BB%E5%AF%BC%E6%9E%81%E7%82%B9%E6%B3%95%E5%BA%94%E6%88%90%E5%AF%B9%E6%B6%88%E5%8E%BB.png">
+<meta property="og:image" content="http://example.com/images/%E5%B9%85%E9%A2%91%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF%E6%8F%90%E5%89%8D%E8%BD%AC%E6%8A%98%E6%83%85%E5%86%B5.png">
+<meta property="og:image" content="http://example.com/images/%E4%BC%AF%E5%BE%B7%E5%9B%BE%E5%B9%85%E9%A2%91%E5%9B%BE%E5%8F%8D%E6%B1%82.png">
+<meta property="og:image" content="http://example.com/images/%E4%BC%AF%E5%BE%B7%E5%9B%BE%E5%8F%8D%E5%90%91%E6%B1%82%E8%A7%A3.jpg">
+<meta property="og:image" content="http://example.com/images/%E4%BC%AF%E5%BE%B7%E5%9B%BE%E5%90%AB%E6%9C%89%E5%85%B3%E9%94%AE%E6%88%AA%E6%AD%A2%E9%A2%91%E7%8E%87.jpg">
+<meta property="og:image" content="http://example.com/images/%E7%9B%B8%E9%A2%91%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF.jpg">
+<meta property="og:image" content="http://example.com/images/%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9%E5%9B%BE%E5%AE%9A%E8%B5%B7%E7%82%B9.png">
+<meta property="og:image" content="http://example.com/images/%E4%B8%80%E5%AF%B9%E5%85%B1%E8%BD%AD%E5%A4%8D%E6%95%B0%E6%9E%81%E7%82%B9.png">
+<meta property="og:image" content="http://example.com/images/%E5%B9%85%E5%80%BC%E8%A3%95%E5%BA%A6.jpg">
+<meta property="og:image" content="http://example.com/images/%E6%A0%B9%E8%BD%A8%E8%BF%B9%E6%9D%A1%E4%BB%B6.png">
+<meta property="og:image" content="http://example.com/images/%E5%AE%9E%E8%BD%B4%E4%B8%8A%E6%A0%B9%E8%BD%A8%E8%BF%B9.png">
+<meta property="og:image" content="http://example.com/images/%E5%87%BA%E5%B0%84%E8%A7%92.png">
+<meta property="og:image" content="http://example.com/images/%E8%B6%85%E5%89%8D%E6%A0%A1%E6%AD%A3.jpg">
+<meta property="og:image" content="http://example.com/images/%E8%A7%92%E5%B9%B3%E5%88%86%E7%BA%BF%E6%B3%95.png">
+<meta property="og:image" content="http://example.com/images/%E9%9D%9E%E7%BA%BF%E6%80%A7.png">
+<meta property="og:image" content="http://example.com/images/%E7%9B%B8%E5%B9%B3%E9%9D%A2%E6%B3%95.jpg">
 <meta property="article:published_time" content="2025-12-22T11:45:01.000Z">
-<meta property="article:modified_time" content="2026-01-04T16:06:24.964Z">
+<meta property="article:modified_time" content="2026-01-06T17:57:38.804Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="课程学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -251,7 +266,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          6k words
+          11k words
         
       </span>
     
@@ -262,7 +277,7 @@
         
         
         
-          51 mins
+          93 mins
         
       </span>
     
@@ -804,7 +819,468 @@
 <li><strong>幅频特性</strong> $A(ω)&#x3D;∣G(jω)∣$：放大倍数随频率的变化</li>
 <li><strong>相频特性</strong> $φ(ω)&#x3D;∠G(jω)$：相位滞后&#x2F;超前随频率的变化</li>
 </ul>
-<h2 id="闭环-开环传递函数、前向通路、特征方程、二阶标准形式"><a href="#闭环-开环传递函数、前向通路、特征方程、二阶标准形式" class="headerlink" title="闭环&#x2F;开环传递函数、前向通路、特征方程、二阶标准形式"></a>闭环&#x2F;开环传递函数、前向通路、特征方程、二阶标准形式</h2><p>前向通路：$G(s)$</p>
+<p>频率特性有如下四种表示：</p>
+<ul>
+<li>幅频相频形式：$G(j\omega) &#x3D; |G(j\omega)| e^{j\angle G(j\omega)}$</li>
+<li>幅角型（指数型）：$G(j\omega) &#x3D; |G(j\omega)| e^{j\varphi(\omega)} &#x3D; A(\omega)e^{j\varphi(\omega)}$</li>
+<li>实部虚部形式：$G(j\omega) &#x3D; A(\omega)\cos\varphi(\omega) + j A(\omega)\sin\varphi(\omega)$</li>
+<li>实部虚部形式：$G(j\omega) &#x3D; P(\omega) + jQ(\omega)$</li>
+</ul>
+<h3 id="伯德图（对数坐标图，闭环动静特性分析，便于分析串联校正对系统影响）"><a href="#伯德图（对数坐标图，闭环动静特性分析，便于分析串联校正对系统影响）" class="headerlink" title="伯德图（对数坐标图，闭环动静特性分析，便于分析串联校正对系统影响）"></a>伯德图（对数坐标图，闭环动静特性分析，便于分析串联校正对系统影响）</h3><p>最小相位系统：所有的零点和极点都位于左半平面（包括虚轴上）。相频特性可由幅频特性唯一确定，相交变化最小。</p>
+<p>考试的时候要画两张图</p>
+<h3 id="幅频特性曲线（对数幅值图）"><a href="#幅频特性曲线（对数幅值图）" class="headerlink" title="幅频特性曲线（对数幅值图）"></a>幅频特性曲线（对数幅值图）</h3><p>通常的幅频特性是 A(ω)&#x3D;∣G(jω)∣，伯德图取对数 20lg：</p>
+<p>$L(ω)&#x3D;20lg∣G(jω)∣&#x3D;20lg(A1⋅A2)&#x3D;20lgA1+20lgA2$</p>
+<ul>
+<li>横轴：频率 $lgw$</li>
+<li>纵轴：幅值，用 dB 分贝</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>环节名称</strong></th>
+<th><strong>传递函数 (标准型)</strong></th>
+<th><strong>幅频特性形状 (渐近线)</strong></th>
+<th><strong>斜率变化</strong></th>
+<th><strong>相频特性 (大致)</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>比例环节</strong></td>
+<td>$K$</td>
+<td>一条水平直线</td>
+<td>0 dB&#x2F;dec</td>
+<td>0° (常数)</td>
+</tr>
+<tr>
+<td><strong>积分环节</strong></td>
+<td>$\frac{1}{s}$</td>
+<td>一条斜向下的直线</td>
+<td><strong>-20 dB&#x2F;dec</strong></td>
+<td>-90° (常数)</td>
+</tr>
+<tr>
+<td><strong>惯性环节</strong></td>
+<td>$\frac{1}{Ts+1}$</td>
+<td>先水平，到 $\omega&#x3D;\frac{1}{T}$ 后折向下</td>
+<td><strong>-20 dB&#x2F;dec</strong></td>
+<td>0° $\to$ -90°</td>
+</tr>
+<tr>
+<td><strong>振荡环节</strong></td>
+<td>$\frac{1}{s^2+2\zeta\omega_n s+\omega_n^2}$</td>
+<td>先水平，到 $\omega&#x3D;\omega_n$ 后折向下</td>
+<td><strong>-40 dB&#x2F;dec</strong></td>
+<td>0° $\to$ -180°</td>
+</tr>
+</tbody></table>
+<p><strong>分子加，分母减，阶数变大乘</strong></p>
+<h4 id="幅频画图步骤（折线）"><a href="#幅频画图步骤（折线）" class="headerlink" title="幅频画图步骤（折线）"></a>幅频画图步骤（折线）</h4><ol>
+<li><p>化为<strong>尾一标准型</strong>，求出来<strong>增益</strong> $K$ 和<strong>基准分贝值</strong> $20lg K$</p>
+</li>
+<li><p>找<strong>转折频率</strong>：所有非 0 的<strong>零点和极点倒数</strong>，从小到大排序</p>
+</li>
+<li><p>画<strong>低频基准线</strong>（没有经过转折的第一段线）：<strong>如果没有经过转折，在坐标纸上找到 $(1, 20lgK)$ 这个点，过这个点画一条斜率为 $−20v$ 的直线。</strong> </p>
+<ul>
+<li>v 指积分环节个数（分母有几个单独的 s）， </li>
+<li>$(1, 20lgK)$ ：低频基准线的<strong>延长线</strong>永远经过这个点。如果在 $w&#x3D;1$之前就转折过了，在 $w&#x3D;1$ 时的纵轴值就不为 $10lgK$ 了。如果是反求 $K$ 的话，就要看第一段线，那个才是决定性的</li>
+<li><img src="/./../images/%E5%B9%85%E9%A2%91%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF%E6%8F%90%E5%89%8D%E8%BD%AC%E6%8A%98%E6%83%85%E5%86%B5.png" srcset="/img/loading.gif" lazyload alt="幅频特性曲线提前转折情况"></li>
+</ul>
+</li>
+<li><p>画<strong>折线</strong>：沿着刚才那条线往右画，遇到转折频率就变斜率：零点斜率+20，极点斜率-20。<strong>分子分母上括号内 s 和 w 的对应关系为：$\frac{s}{w}+1&#x3D; Ts+1$</strong></p>
+</li>
+<li><p>如果出现震荡环节 $s^2$ 的话，要计算修正值：$-20lg2\zeta\sqrt{1 - \zeta^2}&#x3D;修正的差值$  $此处的w&#x3D;w_r&#x3D;w_n\sqrt{1 - 2\zeta^2}$</p>
+<p><strong>反向求解</strong>：</p>
+<p><img src="/./../images/%E4%BC%AF%E5%BE%B7%E5%9B%BE%E5%B9%85%E9%A2%91%E5%9B%BE%E5%8F%8D%E6%B1%82.png" srcset="/img/loading.gif" lazyload alt="伯德图幅频图反求"></p>
+<p><img src="/./../images/%E4%BC%AF%E5%BE%B7%E5%9B%BE%E5%8F%8D%E5%90%91%E6%B1%82%E8%A7%A3.jpg" srcset="/img/loading.gif" lazyload alt="伯德图反向求解"></p>
+<p><strong>含有关键截止频率</strong>：</p>
+<p><img src="/./../images/%E4%BC%AF%E5%BE%B7%E5%9B%BE%E5%90%AB%E6%9C%89%E5%85%B3%E9%94%AE%E6%88%AA%E6%AD%A2%E9%A2%91%E7%8E%87.jpg" srcset="/img/loading.gif" lazyload alt="伯德图含有关键截止频率"></p>
+</li>
+</ol>
+<h3 id="相频特性曲线（相角图）"><a href="#相频特性曲线（相角图）" class="headerlink" title="相频特性曲线（相角图）"></a>相频特性曲线（相角图）</h3><h4 id="画图步骤（平滑曲线）"><a href="#画图步骤（平滑曲线）" class="headerlink" title="画图步骤（平滑曲线）"></a>画图步骤（平滑曲线）</h4><ol>
+<li><p>定<strong>起点</strong>：起始相位：$φ(0)&#x3D;−90°×v$，也就是说0型是从0°开始、1型从-90°开始，以此类推。如果 $K$ 是负数，要额外±180°</p>
+</li>
+<li><p>定<strong>终点</strong>：看分母阶数 n 和分子阶数 m，终值相位：$φ(∞)&#x3D;−90°×(n−m)$</p>
+</li>
+<li><p><strong>转折频率处的相位</strong>：所有零点的arctan - 所有极点的arctan - $90°×v$</p>
+<p>$\varphi(\omega) &#x3D; \sum \arctan\left(\frac{\omega}{z}\right) - \sum \arctan\left(\frac{\omega}{p}\right) - 90^\circ \times v$</p>
+<p>在转折频率点 ω&#x3D;1&#x2F;T 处：</p>
+<ul>
+<li><strong>惯性环节</strong> (1&#x2F;(Ts+1)) 贡献的相位正好是 <strong>−45°</strong>。</li>
+<li><strong>一阶微分</strong> (Ts+1) 贡献的相位正好是 <strong>+45°</strong>。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/./../images/%E7%9B%B8%E9%A2%91%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF.jpg" srcset="/img/loading.gif" lazyload alt="相频特性曲线"></p>
+<h3 id="奈奎斯特图（极坐标图，闭环稳定性分析）"><a href="#奈奎斯特图（极坐标图，闭环稳定性分析）" class="headerlink" title="奈奎斯特图（极坐标图，闭环稳定性分析）"></a>奈奎斯特图（极坐标图，闭环稳定性分析）</h3><p>相当于是一个向量$G(jω)&#x3D;(A(ω),φ(ω) )$变化时的箭头经过的路径，横轴是实部，纵轴是虚部</p>
+<ul>
+<li><strong>距离原点的长度</strong> &#x3D; 幅值 $A(ω)$</li>
+<li><strong>与正实轴的夹角</strong> &#x3D; 相位 $φ(ω)$</li>
+<li>$ω:0→+∞$ 的曲线是上半场（实线）</li>
+<li>$ω:−∞→0$ 的曲线是下半场（虚线），与上半场<strong>关于实轴对称</strong></li>
+</ul>
+<h4 id="画图步骤（平滑曲线）-1"><a href="#画图步骤（平滑曲线）-1" class="headerlink" title="画图步骤（平滑曲线）"></a>画图步骤（平滑曲线）</h4><ol>
+<li><p>定<strong>起点</strong>：还是根据积分环节个数 $v$ 来的：</p>
+<ul>
+<li><p>0 型：起点在<strong>正实轴</strong>上的常数 K 处，相角从 0° 开始</p>
+</li>
+<li><p>1 型：起点在<strong>无穷远</strong>，相角是 −90°（从下方垂直向下的无穷远处沿虚轴上来）</p>
+</li>
+<li><p>2型：起点在<strong>无穷远</strong>，相角是 −180∘（从左边无穷远处沿负实轴过来）</p>
+</li>
+<li><p>假设是1型，确定这条线过来是在虚轴的左边（实部为负），还是右边（实部为正）？直接算 $G(jω)$ 的<strong>实部</strong>在 $ω→0$ 时的极限值。</p>
+<ul>
+<li><p>1 型起点<strong>渐近线</strong>位置：一般从虚轴左侧（三象限）过来</p>
+<p>$R(\omega \to 0) &#x3D; -K \times \left( \sum T_{\text{分母}} - \sum \tau_{\text{分子}} \right)$</p>
+</li>
+<li><p>0 型起点就在实轴 K 处，然后垂直向下（四象限）出发画弧线</p>
+</li>
+<li><p>2型起点通常从上方（二象限）过来（通常极点作用大于零点）</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>定<strong>终点</strong>：还是看分母阶数 n 和分子阶数 m</p>
+<ul>
+<li><strong>幅值</strong>：最终都会回到<strong>原点</strong> (0)</li>
+<li><strong>角度</strong>：以 $−90°×(n−m)$ 的角度切入原点：差1阶从 -90° 切入（垂直下方），差2阶从 -180°切入（左边），差3阶从+90°切入（上方）</li>
+<li>逼近终点的象限怎么确定？顺时针跑圈。 1阶在右下，2阶在左下，3阶在左上，4阶在右上。 <strong>始终保持在“上一个象限”里去逼近坐标轴</strong></li>
+</ul>
+<p><img src="/./../images/%E5%A5%88%E5%A5%8E%E6%96%AF%E7%89%B9%E5%9B%BE%E5%AE%9A%E8%B5%B7%E7%82%B9.png" srcset="/img/loading.gif" lazyload alt="奈奎斯特图定起终点"></p>
+</li>
+<li><p><strong>交点</strong>：</p>
+<ul>
+<li><strong>与实轴交点</strong>：令虚部 $Q(ω)&#x3D;0$，求出 $ω_x$，再算出实部 $G(jω_x)$</li>
+<li><strong>与虚轴交点</strong>：令实部 $P(ω)&#x3D;0$，求出 $ω_y$，再算出虚部 $G(jω_y)$</li>
+</ul>
+</li>
+<li><p><strong>共轭复数极点</strong>主要影响的是 $\zeta$，$\zeta$ 越小，曲线越凸。只有一对共轭复数极点的系统其实是单独的震荡环节，不是二阶标准型，所以起点在（1，0）</p>
+<table>
+<thead>
+<tr>
+<th><strong>名称</strong></th>
+<th><strong>数学形式</strong></th>
+<th><strong>判定依据</strong></th>
+<th>型别</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>标准二阶系统的开环</strong></td>
+<td>$G(s) &#x3D; \frac{K}{s(Ts+1)}$</td>
+<td>分母有一个 $s$</td>
+<td><strong>I 型系统</strong></td>
+</tr>
+<tr>
+<td><strong>单独的振荡环节</strong></td>
+<td>$G(s) &#x3D; \frac{K}{s^2+as+b}$</td>
+<td>分母无 $s$</td>
+<td><strong>0 型系统</strong></td>
+</tr>
+</tbody></table>
+<p><img src="/./../images/%E4%B8%80%E5%AF%B9%E5%85%B1%E8%BD%AD%E5%A4%8D%E6%95%B0%E6%9E%81%E7%82%B9.png" srcset="/img/loading.gif" lazyload alt="一对共轭复数极点"></p>
+</li>
+<li><p>画图的目的是为了看有没有圈住 <strong>(-1, j0)</strong></p>
+</li>
+</ol>
+<h3 id="频域稳定性分析（奈奎斯特判据（频域稳定性判据）、相对稳定性（稳定裕度：幅值裕度、相角裕度））"><a href="#频域稳定性分析（奈奎斯特判据（频域稳定性判据）、相对稳定性（稳定裕度：幅值裕度、相角裕度））" class="headerlink" title="频域稳定性分析（奈奎斯特判据（频域稳定性判据）、相对稳定性（稳定裕度：幅值裕度、相角裕度））"></a>频域稳定性分析（奈奎斯特判据（频域稳定性判据）、相对稳定性（稳定裕度：幅值裕度、相角裕度））</h3><p>实际上是开环频率特性去推断闭环频率特性。开环频率特性来自伯德图和奈奎斯特图，通过看开环的<code>相位裕度</code> $γ$和<code>幅值裕度</code> $K_g$，能预测闭环后系统稳不稳定</p>
+<p>奈奎斯特判据是直接判断闭环系统是否稳定，而裕度是计算离不稳定还有多少相位和增益的</p>
+<h4 id="奈奎斯特判据"><a href="#奈奎斯特判据" class="headerlink" title="奈奎斯特判据"></a>奈奎斯特判据</h4><p>必须用奈奎斯特图</p>
+<p>顺时针，向右看：右看的才是被包围的。</p>
+<ol>
+<li><strong>一般奈奎斯特图只画了实线部分，要把虚线部分补齐</strong></li>
+<li>查看<strong>开环</strong>传递函数 G(s)H(s) 的分母，数在右半平面有几个极点 P</li>
+<li>看奈奎斯特曲线绕 <strong>(-1, j0)</strong> 点<strong>逆时针</strong>转了几圈 N</li>
+<li>计算 $Z&#x3D;P−N$，等于 0 则稳定。</li>
+</ol>
+<h4 id="裕度"><a href="#裕度" class="headerlink" title="裕度"></a>裕度</h4><p>比较满意的性能是 $γ\in [30^\circ, 60^\circ]，h&gt;6dB$</p>
+<p><strong>相角裕度</strong>：</p>
+<ol>
+<li>求剪切频率 $w_c$：$∣G(jω_c)H(jω_c)∣&#x3D;1$，计算也就是求模长&#x3D;1：$|a + jb| &#x3D; \sqrt{a^2 + b^2}$</li>
+<li>相角公式：$φ(ω_c)&#x3D;∠G(jω_c)H(jω_c)&#x3D;-90°×(积分环节个数)-\sum 极点相角 + \sum 零点相角$，比如 $φ(ω)&#x3D;−90∘−arctan(0.1ω)$</li>
+<li>求相角裕度 $γ&#x3D;180°+∠G(jω_c)H(jω_c)$，若 $γ&gt;0$，系统稳定</li>
+</ol>
+<p><strong>幅值裕度</strong>：</p>
+<ol>
+<li>求穿越频率 $ω_g$：$∠G(jω_g)H(jω_g)&#x3D;−180°$</li>
+<li>求模：</li>
+<li>求幅值裕度：<ul>
+<li>$ h &#x3D; \frac{1}{|G(j\omega_g)H(j\omega_g)|} $，若 $h &gt; 1$, 系统稳定。</li>
+<li>$ h(\text{dB}) &#x3D; -20 \lg |G(j\omega_g)H(j\omega_g)| $，若 $h(\text{dB}) &gt; 0$, 系统稳定</li>
+</ul>
+</li>
+</ol>
+<p><img src="/./../images/%E5%B9%85%E5%80%BC%E8%A3%95%E5%BA%A6.jpg" srcset="/img/loading.gif" lazyload alt="幅值裕度"></p>
+<blockquote>
+<p>伯德图</p>
+<table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>1. 找基准点</strong></th>
+<th><strong>2. 看对方的数值</strong></th>
+<th><strong>3. 计算公式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>相角裕度 $\gamma$</strong></td>
+<td>在<strong>幅频图</strong>上找 $0\text{dB}$ 点 (剪切频率 $\omega_c$)</td>
+<td>看<strong>相频图</strong>此时的角度 $\varphi(\omega_c)$</td>
+<td><strong>$\gamma &#x3D; 180^\circ + \varphi(\omega_c)$</strong> <em>(即看离 -180 线上面还有多少度)</em></td>
+</tr>
+<tr>
+<td><strong>幅值裕度 $h$</strong></td>
+<td>在<strong>相频图</strong>上找 $-180^\circ$ 点 (穿越频率 $\omega_g$)</td>
+<td>看<strong>幅频图</strong>此时的值 $L(\omega_g)$</td>
+<td><strong>$h(\text{dB}) &#x3D; -L(\omega_g)$</strong> <em>(即看离 0dB 线下面还有多少dB)</em></td>
+</tr>
+</tbody></table>
+<p>奈奎斯特图</p>
+<table>
+<thead>
+<tr>
+<th><strong>指标</strong></th>
+<th><strong>1. 找交点</strong></th>
+<th><strong>2. 几何测量</strong></th>
+<th><strong>3. 计算公式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>相角裕度 $\gamma$</strong></td>
+<td>找曲线与<strong>单位圆</strong> (半径&#x3D;1) 的交点</td>
+<td>连接原点与该交点，量它与<strong>负实轴</strong>的夹角</td>
+<td><strong>夹角就是 $\gamma$</strong> <em>(在负实轴下方为正)</em></td>
+</tr>
+<tr>
+<td><strong>幅值裕度 $h$</strong></td>
+<td>找曲线与<strong>负实轴</strong>的交点</td>
+<td>量出交点到原点的距离 <strong>$x$</strong> (绝对值)</td>
+<td><strong>$h &#x3D; \frac{1}{x}$</strong> <em>(即倒数。交点在 -1 右边则 $h&gt;1$)</em></td>
+</tr>
+</tbody></table>
+</blockquote>
+<h3 id=""><a href="#" class="headerlink" title=""></a></h3><h3 id="在频率域定义的时域性能判据（截止频率、带宽频率-w-b-–调节时间-t-s-、谐振峰值-M-r-–超调-sigma-、型别、标准二阶系统）"><a href="#在频率域定义的时域性能判据（截止频率、带宽频率-w-b-–调节时间-t-s-、谐振峰值-M-r-–超调-sigma-、型别、标准二阶系统）" class="headerlink" title="在频率域定义的时域性能判据（截止频率、带宽频率$w_b$–调节时间$t_s$、谐振峰值$M_r$–超调$\sigma$、型别、标准二阶系统）"></a>在频率域定义的时域性能判据（截止频率、带宽频率$w_b$–调节时间$t_s$、谐振峰值$M_r$–超调$\sigma$、型别、标准二阶系统）</h3><ol>
+<li><p>频率响应的最大值：谐振峰值$M_r &#x3D; \frac{1}{2\zeta\sqrt{1-\zeta^2}}$，出现在谐振频率 $w_r$ 处</p>
+<ol>
+<li><p><strong>自然频率 ($ω_n$)</strong>：假设<strong>没有阻尼</strong>（没有摩擦力）时，系统自由震荡的频率。</p>
+<ul>
+<li>公式：从二阶标准型里面求</li>
+</ul>
+</li>
+<li><p><strong>阻尼震荡频率 ($ω_d$)</strong>：时域指标。阶跃响应图时波形的震荡频率</p>
+<ul>
+<li>公式：$\omega_d &#x3D; \omega_n \sqrt{1 - \zeta^2}$</li>
+</ul>
+</li>
+<li><p><strong>谐振频率 ($ω_r$)</strong>：频域指标。Bode 图时幅值最高的频率，决定系统稳定性（通过 $\zeta$ 来关联的）（$w_r$ 对应的 $M_r$低时更稳定）</p>
+<ul>
+<li>公式：$\omega_d &#x3D; \omega_n \sqrt{1 - 2\zeta^2}，其中ζ&lt;0.707$</li>
+</ul>
+</li>
+<li><p><strong>截止频率($w_c$)</strong>：Bode 图的幅频曲线穿过横轴时的频率</p>
+</li>
+<li><p><strong>带宽频率($w_b$)</strong>：从 0 到截止频率 $ω_c$ 的这段范围，决定系统有多快（$ω_b$ 越大 ⇒ 上升时间 $t_r$ 越短）</p>
+</li>
+<li><p>$\omega_r &lt; \omega_d &lt; \omega_n &lt; \omega_b$</p>
+</li>
+</ol>
+</li>
+<li><p>型别是通过伯德图的第一段线的斜率判断的，之前已经研究过了</p>
+</li>
+<li><p>标准二阶系统：</p>
+<ol>
+<li><strong>阻尼比</strong>和<strong>相角裕度</strong>：关 $\zeta \approx \frac{\gamma}{100} \quad (0 \le \zeta \le 0.6)$</li>
+<li><strong>阻尼比</strong>和<strong>谐振峰值</strong>：$M_r &#x3D; \frac{1}{2\zeta\sqrt{1-\zeta^2}}，\zeta &lt; 0.707$</li>
+<li>较小的阻尼比，谐振频率和阻尼频率几乎相同，此时谐振频率的值反应系统瞬态响应的速度</li>
+</ol>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>性能类型</strong></th>
+<th><strong>时域指标 (第3章)</strong></th>
+<th><strong>频域指标 (第4章)</strong></th>
+<th><strong>关系</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>稳定性</strong> (稳不稳)</td>
+<td>超调量 $\sigma%$</td>
+<td><strong>谐振峰值 $M_r$</strong>   <strong>相角裕度 $\gamma$</strong></td>
+<td>$\sigma% \uparrow \iff M_r \uparrow \iff \gamma \downarrow$</td>
+</tr>
+<tr>
+<td><strong>快速性</strong> (快不快)</td>
+<td>调节时间 $t_s$   上升时间 $t_r$</td>
+<td><strong>带宽 $\omega_b$</strong>   <strong>剪切频率 $\omega_c$</strong></td>
+<td>$t_s \downarrow \iff \omega_b \uparrow \iff \omega_c \uparrow$</td>
+</tr>
+<tr>
+<td><strong>准确性</strong> (准不准)</td>
+<td>稳态误差 $e_{ss}$</td>
+<td><strong>低频增益</strong>   (伯德图第一段线)</td>
+<td>增益越大，误差越小</td>
+</tr>
+</tbody></table>
+<h2 id="根轨迹法"><a href="#根轨迹法" class="headerlink" title="根轨迹法"></a>根轨迹法</h2><p>根轨迹是闭环系统特征方程的根（即闭环极点）随某个系统参数（如开环增益K）变化的轨迹</p>
+<p>目的是预测闭环系统的性能</p>
+<h3 id="根轨迹条件"><a href="#根轨迹条件" class="headerlink" title="根轨迹条件"></a>根轨迹条件</h3><ul>
+<li><p>对于一般<strong>负反馈系统</strong>来说都是用这个： $K&gt;0$，幅值和相角条件是：$∣G(jω_c)H(jω_c)∣&#x3D;1$，$arg[G(S)H(s)]&#x3D;±(2k+1) \pi&#x3D;-180°$</p>
+</li>
+<li><blockquote>
+<p>对 $K&lt;0$，幅值和相角条件是：$∣G(jω_c)H(jω_c)∣&#x3D;1$，$arg[G(S)H(s)]&#x3D;±(2k) \pi$</p>
+</blockquote>
+</li>
+</ul>
+<p><img src="/./../images/%E6%A0%B9%E8%BD%A8%E8%BF%B9%E6%9D%A1%E4%BB%B6.png" srcset="/img/loading.gif" lazyload alt="根轨迹条件"></p>
+<h3 id="根轨迹绘制"><a href="#根轨迹绘制" class="headerlink" title="根轨迹绘制"></a>根轨迹绘制</h3><ol>
+<li><p><strong>分支数、起点、终点</strong>：</p>
+<ol>
+<li>分支数&#x3D;闭环特征方程次数&#x3D;开环传递函数极点数</li>
+<li>起点：所有开环极点</li>
+<li>终点：所有开环零点，有 $(n-m)$ 条根轨迹的终点为无穷远处</li>
+</ol>
+</li>
+<li><p><strong>对称性</strong>：根轨迹关于实轴对称</p>
+</li>
+<li><p><strong>实轴上的轨迹</strong>：在实轴上，若某一段区域的<strong>右边</strong>有<strong>奇数个</strong>开环零点和极点，这一段就是根轨迹。</p>
+<p><img src="/./../images/%E5%AE%9E%E8%BD%B4%E4%B8%8A%E6%A0%B9%E8%BD%A8%E8%BF%B9.png" srcset="/img/loading.gif" lazyload alt="实轴上根轨迹"></p>
+</li>
+<li><p><strong>$s \to \infty$ 时的渐近线</strong>：$(n-m)$ 条渐近线</p>
+<ol>
+<li>渐近线和实轴的交点：$\sigma_a &#x3D; \frac{\sum \text{极点数值} - \sum \text{零点数值}}{n - m}$</li>
+<li>渐近线和实轴的夹角：差2阶，±90°；差3阶，±60°及180°；差4阶，±45°及±135°</li>
+</ol>
+</li>
+<li><p><strong>汇合点和分离点</strong>：对应闭环特征方程的重根：计算方法是令闭环特征方程的一阶导数为0，算出来的根带回去计算K值，令 k&gt;0 的根就是分离点：</p>
+</li>
+<li><p><strong>与虚轴的交点</strong>：</p>
+<ol>
+<li>方法一：劳斯判据：令某一行全为 0，求出临界 K 和频率 ω</li>
+<li>方法二：代入 s&#x3D;jω 令实部为0，虚部为0，解方程组求 K 和 ω</li>
+</ol>
+</li>
+<li><p><strong>出射角和入射角</strong>（仅针对复数根）：$\theta_{\text{出}} &#x3D; 180^\circ - \left( \sum \text{其他极点对它的角度} - \sum \text{零点对它的角度} \right)$</p>
+<p><img src="/./../images/%E5%87%BA%E5%B0%84%E8%A7%92.png" srcset="/img/loading.gif" lazyload alt="出射角"></p>
+</li>
+</ol>
+<h3 id="根轨迹法应用"><a href="#根轨迹法应用" class="headerlink" title="根轨迹法应用"></a>根轨迹法应用</h3><p>条件稳定系统：含有变化的参数</p>
+<p>增加零点可以使根轨迹向左移动</p>
+<p>增加极点向右移动</p>
+<p>根轨迹族</p>
+<h2 id="第六章-校正装置设计"><a href="#第六章-校正装置设计" class="headerlink" title="第六章 校正装置设计"></a>第六章 校正装置设计</h2><h3 id="PID控制"><a href="#PID控制" class="headerlink" title="PID控制"></a>PID控制</h3><p>放到开环传递函数里面，p是不是就是增加增益K，i就是增加分母项，d就是添加一个分子项</p>
+<p>P：比例。$K$。加快响应速度。有静差，没办法完全精准，过大容易不稳定。</p>
+<p>I：积分。$\frac{1}{s}$ 。消除静态误差。引入极点，相位滞后90°。精度高，反应慢。</p>
+<p>D：微分。$s$。增加阻尼。引入零点，相位超前90°。减小超调提高稳定，对噪声敏感。</p>
+<p>PD：超前校正。响应快，超调小，提高稳定性和快速性。增加相位裕度，根轨迹左弯。无法消除静差。</p>
+<p>PI：滞后校正。更快消除静差，提高低频增益，牺牲相位裕度，动态性能改善有限。</p>
+<p>PID：超前-滞后校正。全能。</p>
+<h3 id="基于伯德图设计校正装置（超前-滞后-超前-滞后）"><a href="#基于伯德图设计校正装置（超前-滞后-超前-滞后）" class="headerlink" title="基于伯德图设计校正装置（超前&#x2F;滞后&#x2F;超前-滞后）"></a>基于伯德图设计校正装置（超前&#x2F;滞后&#x2F;超前-滞后）</h3><p>通常题目会给出三个指标（相角裕度$γ$、增益裕量$K_g$、静态误差系数），分别对应三个频段的要求：</p>
+<p>​	<strong>低频段</strong>（稳态）：要求<strong>稳态误差 $e_{ss}$</strong> 小 → 需要低频增益 K 大</p>
+<p>​	<strong>中频段</strong>（动态）：要求<strong>相角裕度 $γ$</strong> 大（比如 &gt;45∘） → 决定了超调量和稳定性</p>
+<p>​	<strong>高频段</strong>（抗扰）：要求<strong>幅值迅速衰减</strong> → 抗噪</p>
+<h4 id="超前校正"><a href="#超前校正" class="headerlink" title="超前校正"></a>超前校正</h4><p>超前校正两种常用的表达形式：</p>
+<p>​	适用于用 <strong>Bode 图</strong>设计：$ G_c(s) &#x3D; K_c \frac{1+\alpha Ts}{1+Ts}，\alpha &gt; 1$</p>
+<p>​	适用于用<strong>根轨迹</strong>设计：$G_c(s) &#x3D; K_c \cdot \frac{s-z_c}{s-p_c}，其中\frac{p_c}{z_c} &#x3D; \alpha &gt; 1$</p>
+<p><strong>步骤</strong>：</p>
+<ol>
+<li><strong>计算增益 $K$</strong>：<ol>
+<li>根据题目给出的稳态误差$e_{ss}&#x3D; \frac{1}{K}（1、2型）或者\frac{1}{1+K}（0型）$指标或速度常数$K_v&#x3D;K$，算出满足稳态要求的开环增益 K，写出此时的开环传递函数 $G_0(s)$。</li>
+<li>计算此K的截止频率 $w_c$：令 $|G_0(jw)|&#x3D; 1$</li>
+<li><strong>计算此K的相位裕度 $γ_0$</strong>：$γ_0&#x3D;180∘+∠G_0(jω_c)，∠G_0(jω)&#x3D;−90∘−arctan(T_1ω)−arctan(T_2ω)−…$</li>
+<li>验证：计算穿越频率 $w_g$：当 $s(T_1s+1)(T_2s+1)$ 时，$w_g&#x3D;\frac{1}{\sqrt{T_1 T_2}}$ ，幅值裕度$K_g(dB)&#x3D;−20lg∣G0(jω_g)∣$</li>
+</ol>
+</li>
+<li>计算需要的相角超前量 $φ_m$：<ol>
+<li><strong>选取目标穿越频率</strong> $w_{cut}$，<strong>计算他对应的</strong> $φ_0&#x3D;∠G(jω_{cut})&#x3D;-90°-arctan(Tw)$，</li>
+<li><strong>计算在该处需提供的向量超前角（$γ∗$ 对应的 $φ∗&#x3D;∠G(jω)&#x3D;γ∗-180°$），并取：$φ_m&#x3D;φ∗−φ_0+Δ，其中Δ&#x3D;5或10°$（不应大于60°）</strong></li>
+</ol>
+</li>
+<li>根据需要的超前相角 $φ_m$ <strong>计算校正装置 $\alpha&#x3D;\frac{1+sinφ_m}{1-sinφ_m}$，</strong><ol>
+<li>如果题目没给新的截止频率的话$w_m$：$∣G_0(jω_m)∣_{dB}&#x3D;−10lgα$</li>
+<li>否则 $w_m&#x3D;w_{cut}$</li>
+</ol>
+</li>
+<li><strong>计算时间常数 $T&#x3D;\frac{1}{\sqrt{\alpha}w_c}$</strong></li>
+<li>综上得到超前校正装置传递函数$G_c(s) &#x3D; \frac{1 + \alpha T s}{1 + T s} \quad (\alpha &gt; 1)$</li>
+<li>验证校正后的性能指标</li>
+</ol>
+<p><img src="/./../images/%E8%B6%85%E5%89%8D%E6%A0%A1%E6%AD%A3.jpg" srcset="/img/loading.gif" lazyload alt="超前校正"></p>
+<h4 id="滞后校正"><a href="#滞后校正" class="headerlink" title="滞后校正"></a>滞后校正</h4><p>滞后校正两种常用的表达形式：</p>
+<p>​	适用于用 <strong>Bode 图</strong>设计：$ G_c(s) &#x3D; K_c \frac{1+Ts}{1+\beta Ts}，\beta &gt; 1$</p>
+<p>​	适用于用<strong>根轨迹</strong>设计：$G_c(s) &#x3D; K_c \cdot \frac{s-z_c}{s-p_c}, \quad \text{其中 } \frac{z_c}{p_c} &#x3D; \beta &gt; 1$</p>
+<p>步骤：</p>
+<ol>
+<li>根据稳态误差指标要求确定期望的开环增益</li>
+<li>绘制该增益下的Bode图，计算增益裕度和相角裕度</li>
+<li>根据期望的相角裕量选取适当的期望穿越频率 $ω_{gc}$</li>
+<li>选 $T$ 使得校正装置在 $ω_{gc}$ 处相角影响可忽略(当 $T^{-1} &lt; 0.1ω_g$时，校正装置在$ω_{gc}$产生的相角不大于 5°)</li>
+<li>计算增益补偿所需的 $\beta$</li>
+<li>最后校验设计是否满足要求</li>
+</ol>
+<h3 id="基于根轨迹设计校正装置（超前-滞后-超前-滞后）"><a href="#基于根轨迹设计校正装置（超前-滞后-超前-滞后）" class="headerlink" title="基于根轨迹设计校正装置（超前&#x2F;滞后&#x2F;超前-滞后）"></a>基于根轨迹设计校正装置（超前&#x2F;滞后&#x2F;超前-滞后）</h3><h4 id="超前校正-1"><a href="#超前校正-1" class="headerlink" title="超前校正"></a>超前校正</h4><p>步骤：</p>
+<ol>
+<li><p><strong>计算在期望极点处需要提供的超前相角</strong>：假设期望主导极点为 $s_d&#x3D;-ζω_n+jω_n \sqrt{1-ζ^2}$，在根轨迹左侧，所以是超前校正。根据根轨迹的相角条件可知校正装置需要提供的相角是 $φ&#x3D;180°−∣∠G(s_d)∣&#x3D;180°-\arg[G_p(s_d)]&#x3D;\theta_1 - \theta_2，其中\theta_1 &#x3D; \arg(s_d - z_c), \theta_2 &#x3D; \arg(s_d - p_c)$</p>
+</li>
+<li><p>根据所需超前相角 $φ$ 选取 $p_c$ 和 $z_c$，使 $\frac{p_C}{z_C}&#x3D;\alpha&gt;1$。如果想使 $\alpha$ 最小，使用角平分线法：<img src="/./../images/%E8%A7%92%E5%B9%B3%E5%88%86%E7%BA%BF%E6%B3%95.png" srcset="/img/loading.gif" lazyload alt="角平分线法"></p>
+</li>
+<li><p>根据幅角条件确定矫正环节的增益系数 $K_c$：由$|G_p(s)G_c(s)|&#x3D;1$ 可得：$K_c &#x3D; \left| \frac{1}{G_p(s_d)} \right| \cdot \left| \frac{s_d - p_c}{s_d - z_c} \right| &#x3D; \left| \frac{1}{G_p(s_d)} \right| \cdot \left| \frac{\overline{DP}}{\overline{CP}} \right|$</p>
+</li>
+<li><p>校正前：$\lim_{s\to 0} sG_p(s) &#x3D; K’_V$</p>
+<p>校正后：$K_V &#x3D; \lim_{s\to 0} sG_p(s)G_c(s) &#x3D; K’_V K_c \frac{z_c}{p_c} &#x3D; \left| \frac{K’_V}{G_p(s_d)} \right| \cdot \left| \frac{s_d - p_c}{s_d - z_c} \cdot \frac{z_c}{p_c} \right| $</p>
+</li>
+<li><p>$(z_C,p_c)$越向左越好，提高误差系数，减小稳态误差</p>
+</li>
+</ol>
+<h4 id="滞后校正-1"><a href="#滞后校正-1" class="headerlink" title="滞后校正"></a>滞后校正</h4><p>步骤：</p>
+<ol>
+<li>绘制 $G_p(s)$ 的根轨迹，并求出主导极点 $s_d$ 和该主导极点下的速度误差系数 $K_v’$</li>
+<li>计算所需要的额外增益  $K’&#x3D;\frac{K_v}{K_v’}$，则 $\beta &gt; K’$这样子来确定 $\beta$</li>
+<li>根据所需额外增益确定 $p_c$， $z_c$ 和 $K_c \approx \beta &#x3D; z_c&#x2F;p_c$，根据幅值条件（需要的主导极点处模长&#x3D;1）准确求取 $K_c$，得到校正装置传递函数 $G_c(s)$   </li>
+<li>绘制采用 $G_p(s)G_c(s)$ 的根轨迹，检查设计，是否满足要求.</li>
+</ol>
+<h4 id="零点对消法"><a href="#零点对消法" class="headerlink" title="零点对消法"></a>零点对消法</h4><p>如果原系统有一个靠近虚轴，导致系统很慢的极点，直接把校正器的零点 $z_c$ 放在那个极点上，把它抵消掉（$s+z_c$ 和 $s+p_1$ 约分）。然后让校正器的极点 $p_c$ 来满足相角条件</p>
+<h2 id="第七章-非线性系统"><a href="#第七章-非线性系统" class="headerlink" title="第七章 非线性系统"></a>第七章 非线性系统</h2><h3 id="非线性特性"><a href="#非线性特性" class="headerlink" title="非线性特性"></a>非线性特性</h3><p>不满足叠加原理，可能出现自激振荡（极限环）</p>
+<p><img src="/./../images/%E9%9D%9E%E7%BA%BF%E6%80%A7.png" srcset="/img/loading.gif" lazyload alt="非线性"></p>
+<h3 id="相平面法（二阶）"><a href="#相平面法（二阶）" class="headerlink" title="相平面法（二阶）"></a>相平面法（二阶）</h3><p><strong>相轨迹</strong></p>
+<p><strong>奇点</strong>：焦点、节点、鞍点、中心点</p>
+<p><strong>极限环</strong>：判断系统是否会持续震荡</p>
+<p>步骤：</p>
+<ol>
+<li><strong>化为状态方程</strong>：令 $x_1 &#x3D; x, , x_2 &#x3D; \dot{x}$。写出 $\dot{x}_1 &#x3D; x_2$ 和 $\dot{x}_2 &#x3D; f(x_1, x_2)$。</li>
+<li><strong>求奇点</strong>：令 $\dot{x}_1 &#x3D; 0, , \dot{x}_2 &#x3D; 0$，解出的 $(x1,x2)$ 就是奇点（通常在横轴上）。</li>
+<li><strong>判断奇点类型 (特征值法)</strong>：<ul>
+<li>在奇点附近线性化（求雅可比矩阵），求特征值 λ1,2。</li>
+<li>λ 为<strong>实数且同号</strong> → <strong>节点</strong> (Node) [稳定&#x2F;不稳定看正负]。</li>
+<li>λ 为<strong>实数且异号</strong> → <strong>鞍点</strong> (Saddle) [不稳定]。</li>
+<li>λ 为<strong>共轭复数</strong> → <strong>焦点</strong> (Focus) [稳定&#x2F;不稳定看实部]。</li>
+<li>λ 为<strong>纯虚数</strong> → <strong>中心点</strong> (Center) [临界]。</li>
+</ul>
+</li>
+</ol>
+<p><img src="/./../images/%E7%9B%B8%E5%B9%B3%E9%9D%A2%E6%B3%95.jpg" srcset="/img/loading.gif" lazyload alt="相平面法"></p>
+<h3 id="描述函数法（高阶）"><a href="#描述函数法（高阶）" class="headerlink" title="描述函数法（高阶）"></a>描述函数法（高阶）</h3><p><strong>谐波线性化</strong>（把非线性环节近似成一个复数增益 N(A)）</p>
+<p><strong>稳定性判据</strong>：$G(jω)$ 与 $−1&#x2F;N(A)$ 的交点分析</p>
+<p>一个系统由线性部分 G(s) 和非线性环节 N 串联组成。问：系统是否稳定？有没有自激振荡？如果有，求振幅 A 和频率 ω。</p>
+<p><strong>解题步骤</strong>：</p>
+<ol>
+<li><strong>求 G(jω)</strong>：写出线性部分的频率特性（画奈奎斯特图）。</li>
+<li><strong>求 −1&#x2F;N(A)</strong>：题目通常会给非线性环节的描述函数 N(A)，你需要求它的负倒数。<ul>
+<li><em>注意</em>：如果是死区或饱和特性，−1&#x2F;N(A) 通常在负实轴上从 −∞ 走到某一点。</li>
+</ul>
+</li>
+<li><strong>找交点</strong>：<ul>
+<li>联立方程：G(jω)&#x3D;−N(A)1。</li>
+<li>解出交点处的 ω (振荡频率) 和 A (振荡幅值)。</li>
+</ul>
+</li>
+<li><strong>判稳定性 (包围准则)</strong>：<ul>
+<li>看 G(jω) 曲线是否包围了 −1&#x2F;N(A) 曲线。</li>
+<li><strong>结论模板</strong>：如果 G(jω) 穿过 −1&#x2F;N(A)，且从不稳定区域穿向稳定区域（通常是“从外往里穿”），则存在<strong>稳定的自激振荡</strong>。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第八章-离散-采样控制系统"><a href="#第八章-离散-采样控制系统" class="headerlink" title="第八章 离散&#x2F;采样控制系统"></a>第八章 离散&#x2F;采样控制系统</h2><h2 id="闭环-开环传递函数、前向通路、特征方程、二阶标准形式"><a href="#闭环-开环传递函数、前向通路、特征方程、二阶标准形式" class="headerlink" title="闭环&#x2F;开环传递函数、前向通路、特征方程、二阶标准形式"></a>闭环&#x2F;开环传递函数、前向通路、特征方程、二阶标准形式</h2><p>前向通路：$G(s)$</p>
 <p>开环传递函数：$G(s)H(s)$</p>
 <p>闭环传递函数：$\frac{G(s)}{1 + G(s)H(s)}$</p>
 <p>特征方程：$1+G(s)H(s)&#x3D;0$，</p>
